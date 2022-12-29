@@ -1,0 +1,19 @@
+Create a Spring MVC application that implements CRUD (create, read, update, delete) operations on an Employee model class:
+
+Set up a new Spring MVC project in your Eclipse IDE. You will need to include the Spring MVC dependency in your project's build configuration.
+
+Create a model class that represents an employee. The model class should have properties for the employee's Id, name, salary, job title and address as well as genreate getters and setters for those properties. 
+
+Create a controller class that will handle requests for the application. In the controller, create methods to handle each of the following CRUD operations:
+
+createEmployee: Accepts an Employee object as a request parameter and saves it to a data base. Returns a view name that corresponds to a confirmation page.
+
+listEmployees: Retrieves a list of all employees from the data base and adds it to the model. Returns a view name that corresponds to a list page.
+
+editEmployee: Accepts an employee ID as a request parameter and retrieves the corresponding employee from the database. Adds the employee to the model and returns a view name that corresponds to an edit form.
+
+updateEmployee: Accepts an Employee object as a request parameter and updates the corresponding employee in the database. Returns a view name that corresponds to a confirmation page.
+
+deleteEmployee: Accepts an employee ID as a request parameter and deletes the corresponding employee from the database. Returns a view name that corresponds to a confirmation page.
+
+Annotate each of the controller methods with @RequestMapping to specify the URL pattern that the method should handle.
